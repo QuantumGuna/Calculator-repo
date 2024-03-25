@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(29, 30, 39);
+    background-image: url(https://www.enjpg.com/img/2020/dune-1.jpg);
+    background-position: center;
+}
+.calculator {
+    border: 2px solid rgb(56, 46, 46);
+    height: 50vh;
+    width: 40vh;
+    border-radius: 20px;
+    padding: 50px;
+    justify-content: center;
+    background: rgb(59, 72, 88);
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+    background-image: url(https://wallpapercosmos.com/w/full/e/2/d/32268-3840x2160-desktop-4k-dune-2021-background-photo.jpg);
+    background-position: center;
+    
+    
+}
+
+input {
+    width: 300px;
+    border: none;
+    padding-bottom: 20px;    
+    margin: 10px;
+    font-size: 30px;
+    background: transparent;
+    text-align: left;
+    color: #ffffff;
+    cursor: pointer;
+}
+input::placeholder{
+    color: #ffffff;
+}
+
+button {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    background-color: rgb(85, 85, 148);
+    color: white;
+    border:none;
+    box-shadow: -8px -8px 15px rgba(172, 179, 192, 0.5);
+    cursor: pointer;
+    font-size: 15px;
+    background-image: url(https://wallpapercosmos.com/w/full/e/2/d/32268-3840x2160-desktop-4k-dune-2021-background-photo.jpg);
+    background-position: center;
+    
+}
+.operator {
+    color: chartreuse;
+}
+.equal {
+    background-color: rgb(204, 139, 19);
+}
+
+.heading{
+    align-items: center;
+    display: inline-block;
+    text-align: center;
+    color: #ffffff;
+    
+}
