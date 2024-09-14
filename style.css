@@ -1,11 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
-body{
+body {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -15,10 +14,11 @@ body{
     background-image: url(https://www.enjpg.com/img/2020/dune-1.jpg);
     background-position: center;
 }
+
 .calculator {
     border: 2px solid rgb(56, 46, 46);
     height: 50vh;
-    width: 20vw;
+    width: 18%;
     border-radius: 20px;
     padding: 50px;
     justify-content: center;
@@ -26,22 +26,25 @@ body{
     box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
     background-image: url(https://wallpapercosmos.com/w/full/e/2/d/32268-3840x2160-desktop-4k-dune-2021-background-photo.jpg);
     background-position: center;
-    
+}
+.line{
+    display: flex;
+    flex-wrap: nowrap;
     
 }
 
 input {
-    width: 300px;
+    width: 100%;
     border: none;
     padding-bottom: 20px;    
-    margin: 10px;
+    margin: 10px 0;
     font-size: 30px;
     background: transparent;
     text-align: left;
     color: #ffffff;
     cursor: pointer;
 }
-input::placeholder{
+input::placeholder {
     color: #ffffff;
 }
 
@@ -50,59 +53,75 @@ button {
     width: 50px;
     border-radius: 50px;
     padding: 10px;
-    margin: 8px;
+    margin: 5px;
     text-align: center;
     background-color: rgb(85, 85, 148);
     color: white;
-    border:none;
+    border: none;
     box-shadow: -8px -8px 15px rgba(172, 179, 192, 0.5);
     cursor: pointer;
     font-size: 15px;
     background-image: url(https://wallpapercosmos.com/w/full/e/2/d/32268-3840x2160-desktop-4k-dune-2021-background-photo.jpg);
     background-position: center;
-    
+}
+button:active {
+    opacity: 0.2;
 }
 .operator {
     color: chartreuse;
 }
+
 .equal {
     color: rgb(250, 3, 3);
     font-size: 20px;
 }
 
-
-@media (max-width: 768px) {
+/************** Responsive Design *****************/
+@media (max-width: 1690px) {
     .calculator {
-        height: 70vh;
-        width: 80vw;
+        height: 42vh;
+        width: 14%;
         padding: 20px;
     }
-
     input {
-        font-size: 24px;
+        font-size: 25px;
     }
-
     button {
         height: 40px;
         width: 40px;
-        font-size: 12px;
     }
-}
 
-@media (max-width: 480px) {
+}
+@media (max-width: 1150px) {
     .calculator {
-        height: 80vh;
-        width: 90vw;
-        padding: 15px;
-    }
-
-    input {
-        font-size: 20px;
-    }
-
-    button {
-        height: 35px;
-        width: 35px;
-        font-size: 10px;
+        height: 45vh;
+        width: 20%;
     }
 }
+
+@media (max-width: 850px) {
+    .calculator {
+        height: 43vh;
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .calculator {
+        height: 40vh;
+    }
+}
+@media (max-width: 600px) {
+    .calculator {
+        height: 45vh;
+        width: 50%;
+    }
+} 
+
+@media (max-width: 450px) {
+    .calculator {
+        height: 45vh;
+        width: 50%;
+    }
+} 
+
