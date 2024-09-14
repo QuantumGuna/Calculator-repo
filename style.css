@@ -92,9 +92,15 @@ button:active {
     }
 
 }
+@media (max-width: 1500px) {
+    .calculator {
+        height: 40vh;
+        width: 20%;
+    }
+}
 @media (max-width: 1150px) {
     .calculator {
-        height: 45vh;
+        height: 40vh;
         width: 20%;
     }
 }
@@ -113,15 +119,27 @@ button:active {
 }
 @media (max-width: 600px) {
     .calculator {
-        height: 45vh;
+        height: 40vh;
         width: 50%;
     }
 } 
 
-@media (max-width: 450px) {
+@media (max-width: 400px) {
+    
     .calculator {
-        height: 45vh;
-        width: 50%;
+        height: 40vh;
+        width: 60%;
+        font-size: 20px;
     }
 } 
-
+@media (max-width: 330px) {
+    .calculator {
+        height: 32vh;
+        width: 58%;
+    }
+    button {
+        height: 30px;
+        width: 30px;
+        font-size: 12px;
+    } 
+}  
